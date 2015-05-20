@@ -1,2 +1,2 @@
 # leetcode
-algorithm
+algorithm study
