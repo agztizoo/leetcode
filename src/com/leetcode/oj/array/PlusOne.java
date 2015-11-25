@@ -9,6 +9,17 @@ public class PlusOne {
         System.out.println(Arrays.toString(plusOne(a)));
     }
 
+    /**
+     * Given a non-negative number represented as an array of digits, plus one
+     * to the number.
+     * 
+     * The digits are stored such that the most significant digit is at the head
+     * of the list.
+     * 
+     * 
+     * @param digits
+     * @return
+     */
     public static int[] plusOne(int[] digits) {
         int init = 1;
         int cur = 0;

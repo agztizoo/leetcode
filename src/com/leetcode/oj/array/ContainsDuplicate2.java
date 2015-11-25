@@ -18,6 +18,10 @@ public class ContainsDuplicate2 {
     }
 
     /**
+     * Given an array of integers and an integer k, find out whether there are
+     * two distinct indices i and j in the array such that nums[i] = nums[j] and
+     * the difference between i and j is at most k.
+     * 
      * nums[i]和nums[j]之间是否存在相同元素，其中0<j-i<=k
      * 
      * @param nums

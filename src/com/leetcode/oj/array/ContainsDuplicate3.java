@@ -17,6 +17,10 @@ public class ContainsDuplicate3 {
     }
 
     /**
+     * Given an array of integers, find out whether there are two distinct
+     * indices i and j in the array such that the difference between nums[i] and
+     * nums[j] is at most t and the difference between i and j is at most k.
+     * 
      * nums[i]到nums[j]中是否存在这样的元素:nums[j]-nums[i]<t,0<j-i<k
      * 
      * @param nums
