@@ -3,6 +3,8 @@
  */
 package com.leetcode.oj.array;
 
+import java.util.Arrays;
+
 /**
  * @author jieshao
  * @since Nov 25, 2015
@@ -11,7 +13,9 @@ package com.leetcode.oj.array;
 public class RotateArray {
 
     public static void main(String[] args) {
-
+        int[] nums = new int[] { 1, 2 };
+        rotate(nums, 3);
+        System.out.println(Arrays.toString(nums));
     }
 
     /**
@@ -24,10 +28,19 @@ public class RotateArray {
      * @param k
      */
     public static void rotate(int[] nums, int k) {
-        if (k <= 0 || nums == null || nums.length <= k) {
+        if (k <= 0 || nums == null) {
             return;
         }
-
+        int[] newOne = new int[nums.length];
+        System.arraycopy(nums, 0, newOne, 0, nums.length);
+        int j = 0;
+        for (int i = 0; i < newOne.length; i++) {
+            j = i + k;
+            if (j >= newOne.length) {
+                j = j % newOne.length;
+            }
+            nums[j] = newOne[i];
+        }
     }
 
 }
