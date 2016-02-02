@@ -4,8 +4,16 @@
 package com.leetcode.oj.array;
 
 /**
+ * 27. Remove Element
+ * 
+ * Given an array and a value, remove all instances of that value in place and
+ * return the new length.
+ * 
+ * The order of elements can be changed. It doesn't matter what you leave beyond
+ * the new length.
+ * 
  * @author jieshao
- * @since  Nov 25, 2015
+ * @since Nov 25, 2015
  *
  */
 public class RemoveElement {
@@ -17,17 +25,6 @@ public class RemoveElement {
 
     }
 
-    /**
-     * Given an array and a value, remove all instances of that value in place
-     * and return the new length.
-     * 
-     * The order of elements can be changed. It doesn't matter what you leave
-     * beyond the new length.
-     * 
-     * @param A
-     * @param elem
-     * @return
-     */
     public static int removeElement(int[] A, int elem) {
         int index = -1;
         for (int i = 0; i < A.length; i++) {

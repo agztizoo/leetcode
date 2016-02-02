@@ -7,6 +7,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 219. Contains Duplicate II
+ * 
+ * Given an array of integers and an integer k, find out whether there are two
+ * distinct indices i and j in the array such that nums[i] = nums[j] and the
+ * difference between i and j is at most k.
+ * 
+ * nums[i]和nums[j]之间是否存在相同元素，其中0<j-i<=k
+ * 
  * @author jieshao
  * @date Nov 25, 2015
  */
@@ -17,17 +25,6 @@ public class ContainsDuplicate2 {
         System.out.println(containsNearbyDuplicate(a, 1));
     }
 
-    /**
-     * Given an array of integers and an integer k, find out whether there are
-     * two distinct indices i and j in the array such that nums[i] = nums[j] and
-     * the difference between i and j is at most k.
-     * 
-     * nums[i]和nums[j]之间是否存在相同元素，其中0<j-i<=k
-     * 
-     * @param nums
-     * @param k
-     * @return
-     */
     public static boolean containsNearbyDuplicate(int[] nums, int k) {
         if (nums == null || nums.length < 2) {
             return false;

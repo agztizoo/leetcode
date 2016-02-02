@@ -6,6 +6,14 @@ package com.leetcode.oj.array;
 import java.util.TreeSet;
 
 /**
+ * 220. Contains Duplicate III
+ * 
+ * Given an array of integers, find out whether there are two distinct indices i
+ * and j in the array such that the difference between nums[i] and nums[j] is at
+ * most t and the difference between i and j is at most k.
+ * 
+ * nums[i]到nums[j]中是否存在这样的元素:nums[j]-nums[i]<t,0<j-i<k
+ * 
  * @author jieshao
  * @date Nov 25, 2015
  */
@@ -16,18 +24,6 @@ public class ContainsDuplicate3 {
         System.out.println(containsNearbyAlmostDuplicate(a, 1, 2147483647));
     }
 
-    /**
-     * Given an array of integers, find out whether there are two distinct
-     * indices i and j in the array such that the difference between nums[i] and
-     * nums[j] is at most t and the difference between i and j is at most k.
-     * 
-     * nums[i]到nums[j]中是否存在这样的元素:nums[j]-nums[i]<t,0<j-i<k
-     * 
-     * @param nums
-     * @param k
-     * @param t
-     * @return
-     */
     public static boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
         if (nums == null || nums.length < 2) {
             return false;

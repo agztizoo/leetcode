@@ -7,8 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 119. Pascal's Triangle II
+ * 
+ * Given an index k, return the kth row of the Pascal's triangle.
+ * 
+ * For example, given k = 3, Return [1,3,3,1].
+ * 
  * @author jieshao
- * @since  Nov 25, 2015
+ * @since Nov 25, 2015
  *
  */
 public class PascalsTriangle2 {
@@ -20,14 +26,6 @@ public class PascalsTriangle2 {
         System.out.println(getRow(6));
     }
 
-    /**
-     * Given an index k, return the kth row of the Pascal's triangle.
-     * 
-     * For example, given k = 3, Return [1,3,3,1].
-     * 
-     * @param rowIndex
-     * @return
-     */
     public static List<Integer> getRow(int rowIndex) {
         List<Integer> array = new ArrayList<Integer>(rowIndex < 1 ? 1 : rowIndex);
         if (rowIndex < 0) {

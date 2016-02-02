@@ -2,6 +2,20 @@ package com.leetcode.oj.array;
 
 import java.util.Arrays;
 
+/**
+ * 66. Plus One
+ * 
+ * Given a non-negative number represented as an array of digits, plus one to
+ * the number.
+ * 
+ * The digits are stored such that the most significant digit is at the head of
+ * the list.
+ * 
+ * 
+ * @author jieshao
+ * @since Feb 2, 2016
+ *
+ */
 public class PlusOne {
 
     public static void main(String[] args) {
@@ -9,17 +23,6 @@ public class PlusOne {
         System.out.println(Arrays.toString(plusOne(a)));
     }
 
-    /**
-     * Given a non-negative number represented as an array of digits, plus one
-     * to the number.
-     * 
-     * The digits are stored such that the most significant digit is at the head
-     * of the list.
-     * 
-     * 
-     * @param digits
-     * @return
-     */
     public static int[] plusOne(int[] digits) {
         int init = 1;
         int cur = 0;
