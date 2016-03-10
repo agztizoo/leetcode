@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.leetcode.oj.array;
+package com.leetcode.oj.tree;
 
 /**
  * 104. Maximum Depth of Binary Tree
