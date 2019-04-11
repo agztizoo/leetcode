@@ -1,4 +1,21 @@
-classes
+#target/
+target/
+
+# IDEA #
+.idea/
+*.iml
+
+# Eclipse #
+.settings/
 .classpath
 .project
-.settings
+
+# Log #
+logs/
+*.log%
+
+#mac
+.DS_Store
+
+#svn
+.svn
