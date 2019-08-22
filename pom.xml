@@ -14,6 +14,7 @@
         <compiler.version>1.8</compiler.version>
 
         <guava.version>20.0</guava.version>
+        <lombok.version>1.16.10</lombok.version>
     </properties>
 
     <dependencies>
@@ -23,11 +24,19 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
