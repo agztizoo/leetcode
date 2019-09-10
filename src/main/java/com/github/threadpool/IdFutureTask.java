@@ -5,7 +5,7 @@ import java.util.concurrent.FutureTask;
 
 public class IdFutureTask<V> extends FutureTask<V> implements Identifiable {
 
-    private long id;
+    private String id;
 
     public IdFutureTask(Callable<V> callable) {
         super(callable);
@@ -22,7 +22,7 @@ public class IdFutureTask<V> extends FutureTask<V> implements Identifiable {
     }
 
     @Override
-    public long getId() {
+    public String getId() {
         return id;
     }
 }

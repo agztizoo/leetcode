@@ -5,12 +5,12 @@ import java.util.List;
 public abstract class AbstractLoadBalance implements LoadBalance {
 
     @Override
-    public Object select(List<Node> nodes) {
+    public String select(List<Node> nodes) {
         if (nodes == null || nodes.size() == 0) {
             return null;
         }
         if (nodes.size() == 1) {
-            return nodes.get(0);
+            return nodes.get(0).getTarget();
         }
         return doSelect(nodes).getTarget();
     }

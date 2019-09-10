@@ -4,6 +4,6 @@ import java.util.List;
 
 public interface LoadBalance {
 
-    Object select(List<Node> nodes);
+    String select(List<Node> nodes);
 
 }

@@ -13,11 +13,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/**
- *
- * @author shaojie
- * @since 2019/8/21
- */
 public class HashTest {
 
     private static final String[] nodes = {

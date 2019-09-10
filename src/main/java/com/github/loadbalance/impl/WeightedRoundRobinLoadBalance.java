@@ -8,16 +8,20 @@ import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 public class WeightedRoundRobinLoadBalance extends AbstractLoadBalance {
 
+    private ConcurrentHashMap<String, WeightedItem> weightedItemMap = new ConcurrentHashMap<>();
+
     @Override
     protected Node doSelect(List<Node> nodes) {
 
-        List<WeightedItem> items = nodes.stream().map(node -> new WeightedItem(node.getPercent(), node))
-                .collect(Collectors.toList());
+        List<WeightedItem> items = nodes.stream().map(node -> weightedItemMap.computeIfAbsent(node.getTarget(),
+                    n -> new WeightedItem(node.getPercent(), node))
+        ).collect(Collectors.toList());
 
         return next(items);
     }
