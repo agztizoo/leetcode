@@ -30,13 +30,4 @@ public class MaximumDepthOfBinaryTree {
         int rdepth = maxDepth(root.right);
         return (ldepth > rdepth ? ldepth : rdepth) + 1;
     }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 }
