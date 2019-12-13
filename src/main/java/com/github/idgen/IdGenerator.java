@@ -38,8 +38,8 @@ public class IdGenerator {
         long currTime = System.currentTimeMillis() / 1000;
         if (currTime != lastTimestamp) {
             sequence = new AtomicLong(0L);
-
         }
+        return -1;
     }
 
 }
